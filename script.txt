@@ -876,53 +876,51 @@ local function CUKGUQ_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFram
     end
 
 	local frame = script.Parent
-	local userInputService = game:GetService("UserInputService")
-	
-	-- Variáveis para armazenar a posição inicial do mouse e do frame
-	local dragging = false
-	local dragStart = nil
-	local startPos = nil
-	
-	-- Função para atualizar a posição do frame enquanto arrasta
-	local function update(input)
-		local delta = input.Position - dragStart
-		frame.Position = UDim2.new(
-			startPos.X.Scale, startPos.X.Offset + delta.X, 
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y
-		)
-	end
-	
-	-- Detecta quando o jogador começa a arrastar o frame
-	frame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	-- Detecta a movimentação do mouse enquanto arrasta
-	userInputService.InputChanged:Connect(function(input)
-		if dragging and (input == userInputService:GetMouseLocation() or input.UserInputType == Enum.UserInputType.Touch) then
-			update(input)
-		end
-	end)
-	
-	-- Detecta quando o jogador solta o frame para impedir a abertura de menus ou ações indesejadas
-	frame.MouseButton1Click:Connect(function()
-		if dragging then
-			dragging = false
-			return
-		end
-		-- Coloque aqui o código para abrir o menu, se necessário
-	end)
-	
+local userInputService = game:GetService("UserInputService")
+
+-- Variáveis para armazenar a posição inicial do mouse e do frame
+local dragging = false
+local dragStart = nil
+local startPos = nil
+
+-- Função para atualizar a posição do frame enquanto arrasta
+local function update(input)
+	local delta = input.Position - dragStart
+	frame.Position = UDim2.new(
+		startPos.X.Scale, startPos.X.Offset + delta.X, 
+		startPos.Y.Scale, startPos.Y.Offset + delta.Y
+	)
 end
+
+-- Detecta quando o jogador começa a arrastar o frame
+frame.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = frame.Position
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+-- Detecta a movimentação do mouse enquanto arrasta
+userInputService.InputChanged:Connect(function(input)
+	if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+		update(input)
+	end
+end)
+
+-- Detecta quando o jogador solta o frame para impedir a abertura de menus ou ações indesejadas
+frame.MouseButton1Click:Connect(function()
+	if dragging then
+		dragging = false
+		return
+	end
+	-- Coloque aqui o código para abrir o menu, se necessário
+end)
 
 coroutine.wrap(TQWZNEO_fake_script)()
 coroutine.wrap(BONI_fake_script)()
