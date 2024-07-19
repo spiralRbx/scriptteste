@@ -22,8 +22,18 @@ local Converted = {
 	["_UIStroke3"] = Instance.new("UIStroke");
 	["_LocalScript2"] = Instance.new("LocalScript");
 	["_UIStroke4"] = Instance.new("UIStroke");
-	["_LocalScript0"] = Instance.new("LocalScript");
+	["_UIPadding"] = Instance.new("UIPadding");
+	["_title3"] = Instance.new("TextLabel");
+	["_bypass3"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
 	["_UIScale2"] = Instance.new("UIScale");
+	["_UIStroke5"] = Instance.new("UIStroke");
+	["_LocalScript21"] = Instance.new("LocalScript");
+	["_UIStroke6"] = Instance.new("UIStroke");
+	["_UIPadding1"] = Instance.new("UIPadding");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_LocalScript0"] = Instance.new("LocalScript");
+	["_UIScale3"] = Instance.new("UIScale");
 }
 
 -- Properties:
@@ -83,14 +93,14 @@ Converted["_SPIScrollingFrame1"].Parent = Converted["_SPIFRAME1"]
 Converted["_UICorner2"].Parent = Converted["_SPIScrollingFrame1"]
 
 Converted["_titler1"].Font = Enum.Font.FredokaOne
-Converted["_titler1"].Text = "Auto Comboio OP:"
+Converted["_titler1"].Text = "Bombox Dupe:"
 Converted["_titler1"].TextColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_titler1"].TextSize = 23
 Converted["_titler1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_titler1"].BackgroundTransparency = 1
 Converted["_titler1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_titler1"].BorderSizePixel = 0
-Converted["_titler1"].Position = UDim2.new(0.028806584, 0, 0.026599003, 0)
+Converted["_titler1"].Position = UDim2.new(-0.0292906687, 0, 0.0231183115, 0)
 Converted["_titler1"].Size = UDim2.new(0, 172, 0, 50)
 Converted["_titler1"].Name = "titler1"
 Converted["_titler1"].Parent = Converted["_SPIScrollingFrame1"]
@@ -102,7 +112,7 @@ Converted["_bypass1"].TextSize = 14
 Converted["_bypass1"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Converted["_bypass1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_bypass1"].BorderSizePixel = 0
-Converted["_bypass1"].Position = UDim2.new(1.04639518, 0, 0.219999999, 0)
+Converted["_bypass1"].Position = UDim2.new(0.998515546, 0, 0.219999969, 0)
 Converted["_bypass1"].Size = UDim2.new(0, 35, 0, 28)
 Converted["_bypass1"].Name = "bypass1"
 Converted["_bypass1"].Parent = Converted["_titler1"]
@@ -120,14 +130,14 @@ Converted["_UIStroke2"].Color = Color3.fromRGB(170.0000050663948, 0, 255)
 Converted["_UIStroke2"].Parent = Converted["_titler1"]
 
 Converted["_titler2"].Font = Enum.Font.FredokaOne
-Converted["_titler2"].Text = "Auto Comboio OP:"
+Converted["_titler2"].Text = "Equip All Bombox:"
 Converted["_titler2"].TextColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_titler2"].TextSize = 23
 Converted["_titler2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_titler2"].BackgroundTransparency = 1
 Converted["_titler2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_titler2"].BorderSizePixel = 0
-Converted["_titler2"].Position = UDim2.new(0.028806584, 0, 0.201155216, 0)
+Converted["_titler2"].Position = UDim2.new(0.038489528, 0, 0.169829085, 0)
 Converted["_titler2"].Size = UDim2.new(0, 172, 0, 50)
 Converted["_titler2"].Name = "titler2"
 Converted["_titler2"].Parent = Converted["_SPIScrollingFrame1"]
@@ -139,7 +149,7 @@ Converted["_bypass2"].TextSize = 14
 Converted["_bypass2"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Converted["_bypass2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_bypass2"].BorderSizePixel = 0
-Converted["_bypass2"].Position = UDim2.new(1.04639518, 0, 0.219999999, 0)
+Converted["_bypass2"].Position = UDim2.new(1.11088967, 0, 0.220000148, 0)
 Converted["_bypass2"].Size = UDim2.new(0, 35, 0, 28)
 Converted["_bypass2"].Name = "bypass2"
 Converted["_bypass2"].Parent = Converted["_titler2"]
@@ -156,8 +166,54 @@ Converted["_UIStroke3"].Parent = Converted["_bypass2"]
 Converted["_UIStroke4"].Color = Color3.fromRGB(170.0000050663948, 0, 255)
 Converted["_UIStroke4"].Parent = Converted["_titler2"]
 
-Converted["_UIScale2"].Scale = 0.8500000238418579
-Converted["_UIScale2"].Parent = Converted["_SPIFRAME1"]
+Converted["_UIPadding"].PaddingLeft = UDim.new(0, 20)
+Converted["_UIPadding"].Parent = Converted["_titler2"]
+
+Converted["_title3"].Font = Enum.Font.FredokaOne
+Converted["_title3"].Text = "Bombox animation:"
+Converted["_title3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_title3"].TextSize = 23
+Converted["_title3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_title3"].BackgroundTransparency = 1
+Converted["_title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_title3"].BorderSizePixel = 0
+Converted["_title3"].Position = UDim2.new(0.314693779, 0, 0.295857966, 0)
+Converted["_title3"].Size = UDim2.new(0, 172, 0, 50)
+Converted["_title3"].Name = "title3"
+Converted["_title3"].Parent = Converted["_SPIScrollingFrame1"]
+
+Converted["_bypass3"].Font = Enum.Font.SourceSans
+Converted["_bypass3"].Text = ""
+Converted["_bypass3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_bypass3"].TextSize = 14
+Converted["_bypass3"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_bypass3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_bypass3"].BorderSizePixel = 0
+Converted["_bypass3"].Position = UDim2.new(1.1729908, 0, 0.220000148, 0)
+Converted["_bypass3"].Size = UDim2.new(0, 35, 0, 28)
+Converted["_bypass3"].Name = "bypass3"
+Converted["_bypass3"].Parent = Converted["_title3"]
+
+Converted["_UICorner5"].Parent = Converted["_bypass3"]
+
+Converted["_UIScale2"].Scale = 0.9900000095367432
+Converted["_UIScale2"].Parent = Converted["_bypass3"]
+
+Converted["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke5"].Thickness = 1.649999976158142
+Converted["_UIStroke5"].Parent = Converted["_bypass3"]
+
+Converted["_UIStroke6"].Color = Color3.fromRGB(170.0000050663948, 0, 255)
+Converted["_UIStroke6"].Parent = Converted["_title3"]
+
+Converted["_UIPadding1"].PaddingLeft = UDim.new(0, 20)
+Converted["_UIPadding1"].Parent = Converted["_title3"]
+
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_SPIScrollingFrame1"]
+
+Converted["_UIScale3"].Scale = 0.8500000238418579
+Converted["_UIScale3"].Parent = Converted["_SPIFRAME1"]
 
 -- Fake Module Scripts:
 
@@ -166,7 +222,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function LODG_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler1.bypass1.LocalScript1
+local function NATCOC_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler1.bypass1.LocalScript1
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript1"
     script.Parent = Converted["_bypass1"]
@@ -179,50 +235,33 @@ local function LODG_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.S
         return req(obj)
     end
 
-	-- Obtém o TextButton
-	local button = script.Parent
+	local Players = game:GetService("Players")
+	local StarterPack = game:GetService("StarterPack")
 	
-	-- Define as cores de ativado e desativado
-	local corAtivado = Color3.fromRGB(0, 255, 0) -- Verde
-	local corDesativado = Color3.fromRGB(255, 0, 0) -- Vermelho
+	local player = Players.LocalPlayer  -- Obtém o jogador local
+	local boomBox = StarterPack:WaitForChild("BoomBox")
 	
-	-- Variável para rastrear o estado do botão
-	local ativado = false
-	local loopRodando = false
+	local function adicionarBoomBoxAoInventario()
+		-- Duplica o BoomBox
+		local novaBoomBox = boomBox:Clone()
 	
-	-- Função que alterna o estado do botão e controla o loop
-	local function alternarEstado()
-		ativado = not ativado
-		button.BackgroundColor3 = ativado and corAtivado or corDesativado
+		-- Verifica se a nova BoomBox possui todos os scripts e componentes necessários
+		if novaBoomBox:FindFirstChildOfClass("Script") or novaBoomBox:FindFirstChildOfClass("LocalScript") then
+			-- Define o nome da nova BoomBox
+			novaBoomBox.Name = "BoomBoxDuplicado"
 	
-		if ativado then
-			-- Inicia o loop se ainda não estiver rodando
-			if not loopRodando then
-				loopRodando = true
-				spawn(function()
-					local args = {
-						[1] = "ClickStat",
-						[2] = 16  -- Começa com 16
-					}
-					while ativado do
-						game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Client"):InvokeServer(unpack(args))
-						args[2] = args[2] * 2  -- Multiplica por 2 para o próximo clique
-						wait(0.0001)  -- 0.1 ms é aproximadamente 0.0001 segundos
-					end
-					loopRodando = false
-				end)
-			end
+			-- Move a nova BoomBox para o Backpack do jogador
+			novaBoomBox.Parent = player:WaitForChild("Backpack")
 		else
-			-- Se desativado, para o loop
-			ativado = false
+			warn("A BoomBox duplicada não contém scripts necessários.")
 		end
 	end
 	
-	-- Conecta a função ao evento de clique do botão
-	button.MouseButton1Click:Connect(alternarEstado)
+	-- Executa a função para adicionar o BoomBox ao inventário do jogador
+	adicionarBoomBoxAoInventario()
 	
 end
-local function YVGAJIJ_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler2.bypass2.LocalScript2
+local function EMKAV_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler2.bypass2.LocalScript2
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript2"
     script.Parent = Converted["_bypass2"]
@@ -235,29 +274,89 @@ local function YVGAJIJ_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME
         return req(obj)
     end
 
-	-- Obtém o TextButton
-	local button = script.Parent
+	local Players = game:GetService("Players")
 	
-	-- Define as cores de ativado e desativado
-	local corAtivado = Color3.fromRGB(0, 255, 0) -- Verde
-	local corDesativado = Color3.fromRGB(255, 0, 0) -- Vermelho
+	local player = Players.LocalPlayer  -- Obtém o jogador local
+	local backpack = player:WaitForChild("Backpack")  -- Obtém o Backpack do jogador
 	
-	-- Variável para rastrear o estado do botão
-	local ativado = false
-	local loopRodando = false
-	
-	-- Função que alterna o estado do botão e controla o loop
-	local function alternarEstado()
-		ativado = not ativado
-		button.BackgroundColor3 = ativado and corAtivado or corDesativado
+	local function equiparTodasAsBoomBox()
+		-- Itera sobre todos os itens no Backpack do jogador
+		for _, item in pairs(backpack:GetChildren()) do
+			-- Verifica se o item é uma BoomBox
+			if item:IsA("Tool") and item.Name:find("BoomBox") then
+				-- Equipar a BoomBox
+				player.Character.Humanoid:EquipTool(item)
+			end
 		end
+	end
 	
-	
-	-- Conecta a função ao evento de clique do botão
-	button.MouseButton1Click:Connect(alternarEstado)
+	-- Executa a função para equipar todas as BoomBox
+	equiparTodasAsBoomBox()
 	
 end
-local function KFDBINA_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.LocalScript0
+local function OXHOI_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.title3.bypass3.LocalScript2
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript2"
+    script.Parent = Converted["_bypass3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local backpack = player:WaitForChild("Backpack")
+	local chatService = require(game:GetService("Chat"))
+	
+	local function girarBoomBox()
+		-- Define a distância e a velocidade de rotação
+		local distancia = 10
+		local velocidade = 5
+	
+		-- Itera sobre todos os itens no Backpack
+		for _, item in pairs(backpack:GetChildren()) do
+			if item:IsA("Tool") and item.Name:find("BoomBox") then
+				-- Define a posição inicial
+				local posicaoInicial = item.Position
+				local tempo = 0
+	
+				-- Adiciona uma parte para auxiliar na rotação
+				local rotacaoCentro = Instance.new("Part")
+				rotacaoCentro.Size = Vector3.new(1, 1, 1)
+				rotacaoCentro.Position = player.Character.HumanoidRootPart.Position
+				rotacaoCentro.Anchored = true
+				rotacaoCentro.CanCollide = false
+				rotacaoCentro.Parent = workspace
+	
+				-- Faz a BoomBox girar ao redor do personagem
+				while tempo < 2 * math.pi do
+					tempo = tempo + (math.pi / velocidade) * game:GetService("RunService").RenderStepped:Wait()
+					local x = distancia * math.cos(tempo)
+					local z = distancia * math.sin(tempo)
+					item.Position = rotacaoCentro.Position + Vector3.new(x, 0, z)
+				end
+	
+				-- Remove a parte auxiliar de rotação
+				rotacaoCentro:Destroy()
+			end
+		end
+	end
+	
+	local function onChatMessage(message)
+		if message:lower() == "!animarboombox" then
+			girarBoomBox()
+		end
+	end
+	
+	-- Conecta a função ao evento de mensagem de chat
+	player.Chatted:Connect(onChatMessage)
+	
+end
+local function WMLGZ_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.LocalScript0
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript0"
     script.Parent = Converted["_SPIFRAME1"]
@@ -336,6 +435,7 @@ local function KFDBINA_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME
 	
 end
 
-coroutine.wrap(LODG_fake_script)()
-coroutine.wrap(YVGAJIJ_fake_script)()
-coroutine.wrap(KFDBINA_fake_script)()
+coroutine.wrap(NATCOC_fake_script)()
+coroutine.wrap(EMKAV_fake_script)()
+coroutine.wrap(OXHOI_fake_script)()
+coroutine.wrap(WMLGZ_fake_script)()
