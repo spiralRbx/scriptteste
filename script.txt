@@ -543,7 +543,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function UKDG_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButton.Abrir-MenuLocalScript
+local function UYBNT_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButton.Abrir-MenuLocalScript
     local script = Instance.new("LocalScript")
     script.Name = "Abrir-MenuLocalScript"
     script.Parent = Converted["_OpenButton"]
@@ -603,7 +603,7 @@ local function UKDG_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButto
 	end)
 	
 end
-local function QGPUUT_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButton.Arrasta-MenuLocalScript
+local function FUOBE_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenButton.Arrasta-MenuLocalScript
     local script = Instance.new("LocalScript")
     script.Name = "Arrasta-MenuLocalScript"
     script.Parent = Converted["_OpenButton"]
@@ -668,7 +668,7 @@ local function QGPUUT_fake_script() -- Fake Script: StarterGui.ScreenGui.OpenBut
 	end)
 	
 end
-local function AZUE_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainButton.LocalScript
+local function SJYOT_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_MainButton"]
@@ -720,7 +720,7 @@ local function AZUE_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1
 	mainButton.MouseButton1Click:Connect(onMainButtonClick)
 	
 end
-local function GSEVV_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.HatchButton.LocalScript
+local function GJMZC_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.HatchButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_HatchButton"]
@@ -772,7 +772,7 @@ local function GSEVV_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame
 	hatchButton.MouseButton1Click:Connect(onHatchButtonClick)
 	
 end
-local function HNAITI_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.SettingsButton.LocalScript
+local function ARGH_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.SettingsButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SettingsButton"]
@@ -824,7 +824,7 @@ local function HNAITI_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFram
 	settingsButton.MouseButton1Click:Connect(onSettingsButtonClick)
 	
 end
-local function SXLC_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainFrame.Ativa/Desativar1.LocalScript
+local function JXYHV_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainFrame.Ativa/Desativar1.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Ativa/Desativar1"]
@@ -863,7 +863,7 @@ local function SXLC_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1
 	button.MouseButton1Click:Connect(alternarCor)
 	
 end
-local function FVKQAX_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainFrame.Ativa/Desativar1.script
+local function YKQC_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.SPIFrameMenu.MainFrame.Ativa/Desativar1.script
     local script = Instance.new("LocalScript")
     script.Name = "script"
     script.Parent = Converted["_Ativa/Desativar1"]
@@ -885,26 +885,33 @@ local function FVKQAX_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFram
 	
 	-- Variável para rastrear o estado do botão
 	local ativado = false
+	local loopRodando = false
 	
-	-- Função que alterna o estado do botão
+	-- Função que alterna o estado do botão e controla o loop
 	local function alternarEstado()
 		ativado = not ativado
 		button.BackgroundColor3 = ativado and corAtivado or corDesativado
 	
-		-- Se o botão estiver ativado, inicia o loop
 		if ativado then
-			while ativado do
-				local args = {
-					[1] = "ClickStat",
-					[2] = 16  -- Começa com 16
-				}
-	
-				-- Envia o pedido ao servidor
-				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Client"):InvokeServer(unpack(args))
-				args[2] = args[2] * 2  -- Multiplica por 2 para o próximo clique
-	
-				wait(0.1)  -- Espera por 0.1 segundos antes do próximo loop
+			-- Inicia o loop se ainda não estiver rodando
+			if not loopRodando then
+				loopRodando = true
+				spawn(function()
+					local args = {
+						[1] = "ClickStat",
+						[2] = 16  -- Começa com 16
+					}
+					while ativado do
+						game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Client"):InvokeServer(unpack(args))
+						args[2] = args[2] * 2  -- Multiplica por 2 para o próximo clique
+						wait(0.0001)  -- 0.1 ms é aproximadamente 0.0001 segundos
+					end
+					loopRodando = false
+				end)
 			end
+		else
+			-- Se desativado, para o loop
+			ativado = false
 		end
 	end
 	
@@ -912,7 +919,7 @@ local function FVKQAX_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFram
 	button.MouseButton1Click:Connect(alternarEstado)
 	
 end
-local function FCHQBTQ_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.CloseButton.LocalScript
+local function FKFOTHM_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFrame1.CloseButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_CloseButton"]
@@ -941,11 +948,11 @@ local function FCHQBTQ_fake_script() -- Fake Script: StarterGui.ScreenGui.SPIFra
 	
 end
 
-coroutine.wrap(UKDG_fake_script)()
-coroutine.wrap(QGPUUT_fake_script)()
-coroutine.wrap(AZUE_fake_script)()
-coroutine.wrap(GSEVV_fake_script)()
-coroutine.wrap(HNAITI_fake_script)()
-coroutine.wrap(SXLC_fake_script)()
-coroutine.wrap(FVKQAX_fake_script)()
-coroutine.wrap(FCHQBTQ_fake_script)()
+coroutine.wrap(UYBNT_fake_script)()
+coroutine.wrap(FUOBE_fake_script)()
+coroutine.wrap(SJYOT_fake_script)()
+coroutine.wrap(GJMZC_fake_script)()
+coroutine.wrap(ARGH_fake_script)()
+coroutine.wrap(JXYHV_fake_script)()
+coroutine.wrap(YKQC_fake_script)()
+coroutine.wrap(FKFOTHM_fake_script)()
