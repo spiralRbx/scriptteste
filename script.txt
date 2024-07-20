@@ -1,4 +1,4 @@
---local Converted = {
+local Converted = {
 	["_SPIMENU"] = Instance.new("ScreenGui");
 	["_SPIFRAME1"] = Instance.new("Frame");
 	["_UICorner"] = Instance.new("UICorner");
@@ -222,7 +222,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function TODWNTA_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler1.bypass1.LocalScript1
+local function OWFZODO_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler1.bypass1.LocalScript1
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript1"
     script.Parent = Converted["_bypass1"]
@@ -263,7 +263,7 @@ local function TODWNTA_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME
 	button.MouseButton1Click:Connect(teleportPlayer)
 	
 end
-local function WKGQR_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler2.bypass2.LocalScript2
+local function QFQKPU_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.titler2.bypass2.LocalScript2
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript2"
     script.Parent = Converted["_bypass2"]
@@ -296,7 +296,7 @@ local function WKGQR_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.
 	equiparTodasAsBoomBox()
 	
 end
-local function ZMKOG_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.title3.bypass3.LocalScript2
+local function ZFJL_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.SPIScrollingFrame1.title3.bypass3.LocalScript2
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript2"
     script.Parent = Converted["_bypass3"]
@@ -358,7 +358,7 @@ local function ZMKOG_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.
 	player.Chatted:Connect(onChatMessage)
 	
 end
-local function DJSGBO_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.LocalScript0
+local function LGDLWLD_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1.LocalScript0
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript0"
     script.Parent = Converted["_SPIFRAME1"]
@@ -437,7 +437,7 @@ local function DJSGBO_fake_script() -- Fake Script: StarterGui.SPIMENU.SPIFRAME1
 	
 end
 
-coroutine.wrap(TODWNTA_fake_script)()
-coroutine.wrap(WKGQR_fake_script)()
-coroutine.wrap(ZMKOG_fake_script)()
-coroutine.wrap(DJSGBO_fake_script)()
+coroutine.wrap(OWFZODO_fake_script)()
+coroutine.wrap(QFQKPU_fake_script)()
+coroutine.wrap(ZFJL_fake_script)()
+coroutine.wrap(LGDLWLD_fake_script)()
