@@ -1,0 +1,937 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["_ScreenGui"] = Instance.new("ScreenGui");
+	["_Main"] = Instance.new("Frame");
+	["_UICorner"] = Instance.new("UICorner");
+	["_SPIRAL HUB"] = Instance.new("TextLabel");
+	["_rgb text"] = Instance.new("LocalScript");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UIGradient"] = Instance.new("UIGradient");
+	["_rgb uistroke"] = Instance.new("LocalScript");
+	["_Bar"] = Instance.new("Frame");
+	["_MainBT"] = Instance.new("TextButton");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_textrgb"] = Instance.new("LocalScript");
+	["_UIGradient1"] = Instance.new("UIGradient");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_MiscBT"] = Instance.new("TextButton");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_textrgb1"] = Instance.new("LocalScript");
+	["_UIGradient2"] = Instance.new("UIGradient");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_UITextSizeConstraint1"] = Instance.new("UITextSizeConstraint");
+	["_PlayerBT"] = Instance.new("TextButton");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_textrgb2"] = Instance.new("LocalScript");
+	["_UIGradient3"] = Instance.new("UIGradient");
+	["_UIStroke3"] = Instance.new("UIStroke");
+	["_UITextSizeConstraint2"] = Instance.new("UITextSizeConstraint");
+	["_Settings"] = Instance.new("TextButton");
+	["_UICorner6"] = Instance.new("UICorner");
+	["_textrgb3"] = Instance.new("LocalScript");
+	["_UIGradient4"] = Instance.new("UIGradient");
+	["_UIStroke4"] = Instance.new("UIStroke");
+	["_UITextSizeConstraint3"] = Instance.new("UITextSizeConstraint");
+	["_MainFR"] = Instance.new("Frame");
+	["_UIStroke5"] = Instance.new("UIStroke");
+	["_UICorner7"] = Instance.new("UICorner");
+	["_Title"] = Instance.new("TextLabel");
+	["_Op"] = Instance.new("Frame");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_Toggle"] = Instance.new("TextButton");
+	["_UICorner8"] = Instance.new("UICorner");
+	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["_Ball"] = Instance.new("Frame");
+	["_UICorner9"] = Instance.new("UICorner");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_MiscFR"] = Instance.new("Frame");
+	["_UIStroke6"] = Instance.new("UIStroke");
+	["_UICorner10"] = Instance.new("UICorner");
+	["_Op1"] = Instance.new("Frame");
+	["_Title1"] = Instance.new("TextLabel");
+	["_PlayerFR"] = Instance.new("Frame");
+	["_UIStroke7"] = Instance.new("UIStroke");
+	["_UICorner11"] = Instance.new("UICorner");
+	["_Op2"] = Instance.new("Frame");
+	["_Title2"] = Instance.new("TextLabel");
+	["_SettingsFR"] = Instance.new("Frame");
+	["_UIStroke8"] = Instance.new("UIStroke");
+	["_UICorner12"] = Instance.new("UICorner");
+	["_Op3"] = Instance.new("Frame");
+	["_Title3"] = Instance.new("TextLabel");
+	["_TextButton"] = Instance.new("LocalScript");
+	["_LocalScript1"] = Instance.new("LocalScript");
+}
+
+-- Properties:
+
+Converted["_ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_ScreenGui"].Parent = game:GetService("CoreGui")
+
+Converted["_Main"].BackgroundColor3 = Color3.fromRGB(16.000000946223736, 16.000000946223736, 16.000000946223736)
+Converted["_Main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Main"].BorderSizePixel = 0
+Converted["_Main"].Position = UDim2.new(0.186197028, 0, 0.193972588, 0)
+Converted["_Main"].Size = UDim2.new(0.626836538, 0, 0.610445321, 0)
+Converted["_Main"].Name = "Main"
+Converted["_Main"].Parent = Converted["_ScreenGui"]
+
+Converted["_UICorner"].Parent = Converted["_Main"]
+
+Converted["_SPIRAL HUB"].Font = Enum.Font.FredokaOne
+Converted["_SPIRAL HUB"].Text = "SPIRAL HUB"
+Converted["_SPIRAL HUB"].TextColor3 = Color3.fromRGB(137.00000703334808, 170.0000050663948, 46.000001057982445)
+Converted["_SPIRAL HUB"].TextSize = 40
+Converted["_SPIRAL HUB"].BackgroundColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_SPIRAL HUB"].BorderColor3 = Color3.fromRGB(17.00000088661909, 17.00000088661909, 17.00000088661909)
+Converted["_SPIRAL HUB"].BorderSizePixel = 0
+Converted["_SPIRAL HUB"].Position = UDim2.new(0.300118655, 0, -0.0435074307, 0)
+Converted["_SPIRAL HUB"].Size = UDim2.new(0.420355231, 0, 0.106882021, 0)
+Converted["_SPIRAL HUB"].Name = "SPIRAL HUB"
+Converted["_SPIRAL HUB"].Parent = Converted["_Main"]
+
+Converted["_UICorner1"].Parent = Converted["_SPIRAL HUB"]
+
+Converted["_UIGradient"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(132.85096406936646, 0, 255)),
+	ColorSequenceKeypoint.new(0.24087926745414734, Color3.fromRGB(255, 10.105572938919067, 16.60000205039978)),
+	ColorSequenceKeypoint.new(0.503767728805542, Color3.fromRGB(255, 174.56100672483444, 16.00636750459671)),
+	ColorSequenceKeypoint.new(0.7867507338523865, Color3.fromRGB(82.10034012794495, 253.12499821186066, 0)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(20.597189962863922, 161.38539612293243, 255))
+}
+Converted["_UIGradient"].Parent = Converted["_SPIRAL HUB"]
+
+Converted["_Bar"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bar"].BorderSizePixel = 0
+Converted["_Bar"].Position = UDim2.new(0.00744978944, 0, 0.0832315013, 0)
+Converted["_Bar"].Size = UDim2.new(0.986164689, 0, 0.119172461, 0)
+Converted["_Bar"].Name = "Bar"
+Converted["_Bar"].Parent = Converted["_Main"]
+
+Converted["_MainBT"].Font = Enum.Font.FredokaOne
+Converted["_MainBT"].Text = "Main"
+Converted["_MainBT"].TextColor3 = Color3.fromRGB(223.00001710653305, 223.00001710653305, 223.00001710653305)
+Converted["_MainBT"].TextSize = 50
+Converted["_MainBT"].TextWrapped = true
+Converted["_MainBT"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainBT"].BorderColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
+Converted["_MainBT"].BorderSizePixel = 0
+Converted["_MainBT"].Position = UDim2.new(0.043191012, 0, 0.095238097, 0)
+Converted["_MainBT"].Size = UDim2.new(0.197120085, 0, 0.793650806, 1)
+Converted["_MainBT"].Name = "MainBT"
+Converted["_MainBT"].Parent = Converted["_Bar"]
+
+Converted["_UICorner2"].Parent = Converted["_MainBT"]
+
+Converted["_UIGradient1"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 6.086483001708984)),
+	ColorSequenceKeypoint.new(0.311058908700943, Color3.fromRGB(139.66521441936493, 255, 0)),
+	ColorSequenceKeypoint.new(0.7095574736595154, Color3.fromRGB(0, 255, 237.63614773750305)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(122.26418495178223, 0, 255))
+}
+Converted["_UIGradient1"].Parent = Converted["_MainBT"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke"].Parent = Converted["_MainBT"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 25
+Converted["_UITextSizeConstraint"].MinTextSize = 8
+Converted["_UITextSizeConstraint"].Parent = Converted["_MainBT"]
+
+Converted["_UICorner3"].Parent = Converted["_Bar"]
+
+Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke1"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke1"].Parent = Converted["_Bar"]
+
+Converted["_MiscBT"].Font = Enum.Font.FredokaOne
+Converted["_MiscBT"].Text = "Misc"
+Converted["_MiscBT"].TextColor3 = Color3.fromRGB(223.00001710653305, 223.00001710653305, 223.00001710653305)
+Converted["_MiscBT"].TextSize = 50
+Converted["_MiscBT"].TextWrapped = true
+Converted["_MiscBT"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MiscBT"].BorderColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
+Converted["_MiscBT"].BorderSizePixel = 0
+Converted["_MiscBT"].Position = UDim2.new(0.277529806, 0, 0.095238097, 0)
+Converted["_MiscBT"].Size = UDim2.new(0.197120085, 0, 0.793650806, 1)
+Converted["_MiscBT"].Name = "MiscBT"
+Converted["_MiscBT"].Parent = Converted["_Bar"]
+
+Converted["_UICorner4"].Parent = Converted["_MiscBT"]
+
+Converted["_UIGradient2"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 6.086483001708984)),
+	ColorSequenceKeypoint.new(0.311058908700943, Color3.fromRGB(139.66521441936493, 255, 0)),
+	ColorSequenceKeypoint.new(0.7095574736595154, Color3.fromRGB(0, 255, 237.63614773750305)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(122.26418495178223, 0, 255))
+}
+Converted["_UIGradient2"].Parent = Converted["_MiscBT"]
+
+Converted["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke2"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke2"].Parent = Converted["_MiscBT"]
+
+Converted["_UITextSizeConstraint1"].MaxTextSize = 25
+Converted["_UITextSizeConstraint1"].MinTextSize = 8
+Converted["_UITextSizeConstraint1"].Parent = Converted["_MiscBT"]
+
+Converted["_PlayerBT"].Font = Enum.Font.FredokaOne
+Converted["_PlayerBT"].Text = "Player"
+Converted["_PlayerBT"].TextColor3 = Color3.fromRGB(223.00001710653305, 223.00001710653305, 223.00001710653305)
+Converted["_PlayerBT"].TextSize = 50
+Converted["_PlayerBT"].TextWrapped = true
+Converted["_PlayerBT"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PlayerBT"].BorderColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
+Converted["_PlayerBT"].BorderSizePixel = 0
+Converted["_PlayerBT"].Position = UDim2.new(0.525907278, 0, 0.095238097, 0)
+Converted["_PlayerBT"].Size = UDim2.new(0.197120085, 0, 0.793650806, 1)
+Converted["_PlayerBT"].Name = "PlayerBT"
+Converted["_PlayerBT"].Parent = Converted["_Bar"]
+
+Converted["_UICorner5"].Parent = Converted["_PlayerBT"]
+
+Converted["_UIGradient3"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 6.086483001708984)),
+	ColorSequenceKeypoint.new(0.311058908700943, Color3.fromRGB(139.66521441936493, 255, 0)),
+	ColorSequenceKeypoint.new(0.7095574736595154, Color3.fromRGB(0, 255, 237.63614773750305)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(122.26418495178223, 0, 255))
+}
+Converted["_UIGradient3"].Parent = Converted["_PlayerBT"]
+
+Converted["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke3"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke3"].Parent = Converted["_PlayerBT"]
+
+Converted["_UITextSizeConstraint2"].MaxTextSize = 25
+Converted["_UITextSizeConstraint2"].MinTextSize = 8
+Converted["_UITextSizeConstraint2"].Parent = Converted["_PlayerBT"]
+
+Converted["_Settings"].Font = Enum.Font.FredokaOne
+Converted["_Settings"].Text = "Settings"
+Converted["_Settings"].TextColor3 = Color3.fromRGB(223.00001710653305, 223.00001710653305, 223.00001710653305)
+Converted["_Settings"].TextSize = 50
+Converted["_Settings"].TextWrapped = true
+Converted["_Settings"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Settings"].BorderColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
+Converted["_Settings"].BorderSizePixel = 0
+Converted["_Settings"].Position = UDim2.new(0.762405813, 0, 0.095238097, 0)
+Converted["_Settings"].Size = UDim2.new(0.197120085, 0, 0.793650806, 1)
+Converted["_Settings"].Name = "Settings"
+Converted["_Settings"].Parent = Converted["_Bar"]
+
+Converted["_UICorner6"].Parent = Converted["_Settings"]
+
+Converted["_UIGradient4"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 6.086483001708984)),
+	ColorSequenceKeypoint.new(0.311058908700943, Color3.fromRGB(139.66521441936493, 255, 0)),
+	ColorSequenceKeypoint.new(0.7095574736595154, Color3.fromRGB(0, 255, 237.63614773750305)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(122.26418495178223, 0, 255))
+}
+Converted["_UIGradient4"].Parent = Converted["_Settings"]
+
+Converted["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke4"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke4"].Parent = Converted["_Settings"]
+
+Converted["_UITextSizeConstraint3"].MaxTextSize = 25
+Converted["_UITextSizeConstraint3"].MinTextSize = 8
+Converted["_UITextSizeConstraint3"].Parent = Converted["_Settings"]
+
+Converted["_MainFR"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFR"].BorderSizePixel = 0
+Converted["_MainFR"].Position = UDim2.new(0.0063897362, 0, 0.225103483, 0)
+Converted["_MainFR"].Size = UDim2.new(0.987224698, 0, 0.758640409, 0)
+Converted["_MainFR"].Name = "MainFR"
+Converted["_MainFR"].Parent = Converted["_Main"]
+
+Converted["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke5"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke5"].Parent = Converted["_MainFR"]
+
+Converted["_UICorner7"].Parent = Converted["_MainFR"]
+
+Converted["_Title"].Font = Enum.Font.FredokaOne
+Converted["_Title"].Text = "Main"
+Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextSize = 28
+Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].BackgroundTransparency = 1
+Converted["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title"].BorderSizePixel = 0
+Converted["_Title"].Position = UDim2.new(0.433944941, 0, 0.0279334802, 0)
+Converted["_Title"].Size = UDim2.new(0.130920127, 0, 0.126659825, 0)
+Converted["_Title"].Name = "Title"
+Converted["_Title"].Parent = Converted["_MainFR"]
+
+Converted["_Op"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op"].BorderSizePixel = 0
+Converted["_Op"].Position = UDim2.new(0.00862987526, 0, 0.154593438, 0)
+Converted["_Op"].Size = UDim2.new(0.981009662, 0, 0.824803233, 0)
+Converted["_Op"].Name = "Op"
+Converted["_Op"].Parent = Converted["_MainFR"]
+
+Converted["_TextLabel"].Font = Enum.Font.FredokaOne
+Converted["_TextLabel"].Text = "Auto Click:"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(241.00001603364944, 241.00001603364944, 241.00001603364944)
+Converted["_TextLabel"].TextSize = 20
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0.00901537668, 0, 0.0671207085, 0)
+Converted["_TextLabel"].Size = UDim2.new(0.148764476, 0, 0.155915916, 0)
+Converted["_TextLabel"].Parent = Converted["_Op"]
+
+Converted["_Toggle"].Font = Enum.Font.SourceSans
+Converted["_Toggle"].Text = ""
+Converted["_Toggle"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Toggle"].TextSize = 14
+Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Converted["_Toggle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Toggle"].BorderSizePixel = 0
+Converted["_Toggle"].Position = UDim2.new(0.157125145, 0, 0.0727217644, 0)
+Converted["_Toggle"].Size = UDim2.new(0, 200, 0.150000006, 0)
+Converted["_Toggle"].Name = "Toggle"
+Converted["_Toggle"].Parent = Converted["_Op"]
+
+Converted["_UICorner8"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner8"].Parent = Converted["_Toggle"]
+
+Converted["_UIAspectRatioConstraint"].AspectRatio = 2.1500000953674316
+Converted["_UIAspectRatioConstraint"].Parent = Converted["_Toggle"]
+
+Converted["_Ball"].BackgroundColor3 = Color3.fromRGB(39.00000147521496, 7.000000532716513, 0)
+Converted["_Ball"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Ball"].BorderSizePixel = 0
+Converted["_Ball"].Position = UDim2.new(0.0199999996, 0, 0, 0)
+Converted["_Ball"].Size = UDim2.new(0.467999995, -2, 1.00209892, 0)
+Converted["_Ball"].Name = "Ball"
+Converted["_Ball"].Parent = Converted["_Toggle"]
+
+Converted["_UICorner9"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner9"].Parent = Converted["_Ball"]
+
+Converted["_MiscFR"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MiscFR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MiscFR"].BorderSizePixel = 0
+Converted["_MiscFR"].Position = UDim2.new(0.0063897362, 0, 0.225103483, 0)
+Converted["_MiscFR"].Size = UDim2.new(0.987224698, 0, 0.758640409, 0)
+Converted["_MiscFR"].Visible = false
+Converted["_MiscFR"].Name = "MiscFR"
+Converted["_MiscFR"].Parent = Converted["_Main"]
+
+Converted["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke6"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke6"].Parent = Converted["_MiscFR"]
+
+Converted["_UICorner10"].Parent = Converted["_MiscFR"]
+
+Converted["_Op1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op1"].BorderSizePixel = 0
+Converted["_Op1"].Position = UDim2.new(0.00862987526, 0, 0.154593438, 0)
+Converted["_Op1"].Size = UDim2.new(0.981009662, 0, 0.824803233, 0)
+Converted["_Op1"].Name = "Op"
+Converted["_Op1"].Parent = Converted["_MiscFR"]
+
+Converted["_Title1"].Font = Enum.Font.FredokaOne
+Converted["_Title1"].Text = "Misc"
+Converted["_Title1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title1"].TextSize = 28
+Converted["_Title1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title1"].BackgroundTransparency = 1
+Converted["_Title1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title1"].BorderSizePixel = 0
+Converted["_Title1"].Position = UDim2.new(0.433944941, 0, 0.0279334802, 0)
+Converted["_Title1"].Size = UDim2.new(0.130920127, 0, 0.126659825, 0)
+Converted["_Title1"].Name = "Title"
+Converted["_Title1"].Parent = Converted["_MiscFR"]
+
+Converted["_PlayerFR"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PlayerFR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_PlayerFR"].BorderSizePixel = 0
+Converted["_PlayerFR"].Position = UDim2.new(0.0063897362, 0, 0.225103483, 0)
+Converted["_PlayerFR"].Size = UDim2.new(0.987224698, 0, 0.758640409, 0)
+Converted["_PlayerFR"].Visible = false
+Converted["_PlayerFR"].Name = "PlayerFR"
+Converted["_PlayerFR"].Parent = Converted["_Main"]
+
+Converted["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke7"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke7"].Parent = Converted["_PlayerFR"]
+
+Converted["_UICorner11"].Parent = Converted["_PlayerFR"]
+
+Converted["_Op2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op2"].BorderSizePixel = 0
+Converted["_Op2"].Position = UDim2.new(0.00862987526, 0, 0.154593438, 0)
+Converted["_Op2"].Size = UDim2.new(0.981009662, 0, 0.824803233, 0)
+Converted["_Op2"].Name = "Op"
+Converted["_Op2"].Parent = Converted["_PlayerFR"]
+
+Converted["_Title2"].Font = Enum.Font.FredokaOne
+Converted["_Title2"].Text = "Player"
+Converted["_Title2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title2"].TextSize = 28
+Converted["_Title2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title2"].BackgroundTransparency = 1
+Converted["_Title2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title2"].BorderSizePixel = 0
+Converted["_Title2"].Position = UDim2.new(0.433944941, 0, 0.0279334802, 0)
+Converted["_Title2"].Size = UDim2.new(0.130920127, 0, 0.126659825, 0)
+Converted["_Title2"].Name = "Title"
+Converted["_Title2"].Parent = Converted["_PlayerFR"]
+
+Converted["_SettingsFR"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SettingsFR"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SettingsFR"].BorderSizePixel = 0
+Converted["_SettingsFR"].Position = UDim2.new(0.0063897362, 0, 0.225103483, 0)
+Converted["_SettingsFR"].Size = UDim2.new(0.987224698, 0, 0.758640409, 0)
+Converted["_SettingsFR"].Visible = false
+Converted["_SettingsFR"].Name = "SettingsFR"
+Converted["_SettingsFR"].Parent = Converted["_Main"]
+
+Converted["_UIStroke8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke8"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke8"].Parent = Converted["_SettingsFR"]
+
+Converted["_UICorner12"].Parent = Converted["_SettingsFR"]
+
+Converted["_Op3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Op3"].BorderSizePixel = 0
+Converted["_Op3"].Position = UDim2.new(0.00862987526, 0, 0.154593438, 0)
+Converted["_Op3"].Size = UDim2.new(0.981009662, 0, 0.824803233, 0)
+Converted["_Op3"].Name = "Op"
+Converted["_Op3"].Parent = Converted["_SettingsFR"]
+
+Converted["_Title3"].Font = Enum.Font.FredokaOne
+Converted["_Title3"].Text = "Settings"
+Converted["_Title3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title3"].TextSize = 28
+Converted["_Title3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title3"].BackgroundTransparency = 1
+Converted["_Title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Title3"].BorderSizePixel = 0
+Converted["_Title3"].Position = UDim2.new(0.433944941, 0, 0.0279334802, 0)
+Converted["_Title3"].Size = UDim2.new(0.130920127, 0, 0.126659825, 0)
+Converted["_Title3"].Name = "Title"
+Converted["_Title3"].Parent = Converted["_SettingsFR"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function ROXD_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.SPIRAL HUB.rgb text
+    local script = Instance.new("LocalScript")
+    script.Name = "rgb text"
+    script.Parent = Converted["_SPIRAL HUB"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local textLabel = script.Parent -- Ou o caminho do seu TextLabel
+	local tweenService = game:GetService("TweenService")
+	
+	local function changeColor()
+		while true do
+			-- Cria um valor de cor RGB
+			for r = 0, 255, 5 do
+				textLabel.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				textLabel.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				textLabel.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	-- Chama a função para iniciar a mudança de cor
+	changeColor()
+	
+end
+local function JCMVT_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.rgb uistroke
+    local script = Instance.new("LocalScript")
+    script.Name = "rgb uistroke"
+    script.Parent = Converted["_Main"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local frame = script.Parent -- Certifique-se que o script está dentro do Frame ou ajuste o caminho
+	
+	-- Cria o UIStroke
+	local uistroke = Instance.new("UIStroke")
+	uistroke.Parent = frame
+	uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	uistroke.Thickness = 2
+	
+	-- Função para fazer o efeito RGB
+	local function animateRGB()
+		while true do
+			for r = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	-- Inicia a animação RGB
+	animateRGB()
+	
+end
+local function NZBI_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.Bar.MainBT.textrgb
+    local script = Instance.new("LocalScript")
+    script.Name = "textrgb"
+    script.Parent = Converted["_MainBT"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local MainBT = script.Parent
+	local function animateTextRGB()
+		while true do
+			for r = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	spawn(animateTextRGB)
+end
+local function SSNS_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.Bar.MiscBT.textrgb
+    local script = Instance.new("LocalScript")
+    script.Name = "textrgb"
+    script.Parent = Converted["_MiscBT"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local MainBT = script.Parent
+	local function animateTextRGB()
+		while true do
+			for r = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	spawn(animateTextRGB)
+end
+local function CGTWVLY_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.Bar.PlayerBT.textrgb
+    local script = Instance.new("LocalScript")
+    script.Name = "textrgb"
+    script.Parent = Converted["_PlayerBT"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local MainBT = script.Parent
+	local function animateTextRGB()
+		while true do
+			for r = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	spawn(animateTextRGB)
+end
+local function KFGRWI_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.Bar.Settings.textrgb
+    local script = Instance.new("LocalScript")
+    script.Name = "textrgb"
+    script.Parent = Converted["_Settings"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local MainBT = script.Parent
+	local function animateTextRGB()
+		while true do
+			for r = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				MainBT.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	spawn(animateTextRGB)
+end
+local function RJQPYIZ_fake_script() -- Fake Script: StarterGui.ScreenGui.Main.MainFR.Op.Toggle.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Toggle"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	-- Pegue os objetos necessários
+	local button = script.Parent -- O botão que dispara a ação
+	local frame = button:WaitForChild("Ball") -- O Frame dentro do botão
+	local tweenService = game:GetService("TweenService") -- Serviço de animação
+	
+	-- Defina as propriedades de animação
+	local tweenInfo = TweenInfo.new(
+		0.5, -- Duração da animação
+		Enum.EasingStyle.Quad, -- Estilo de transição
+		Enum.EasingDirection.Out -- Direção da transição
+	)
+	
+	-- Define as posições
+	local position1 = UDim2.new(0.02, 0, 0, 0) -- Posição inicial (vermelho)
+	local position2 = UDim2.new(0.5, 0, 0, 0) -- Posição final (verde)
+	
+	-- Define as cores
+	local color1 = Color3.fromRGB(255, 0, 0) -- Vermelho
+	local color2 = Color3.fromRGB(0, 255, 0) -- Verde
+	
+	-- Variável para controlar o estado atual
+	local isAtPosition1 = true -- Começa na posição 1
+	
+	-- Função para trocar a posição e a cor do Frame
+	local function toggleFrame()
+		if isAtPosition1 then
+			-- Mover para a posição 2 (verde)
+			local tweenPosition = tweenService:Create(frame, tweenInfo, {Position = position2})
+			tweenPosition:Play()
+			-- Mudar a cor para verde
+			button.BackgroundColor3 = color2
+		else
+			-- Mover para a posição 1 (vermelho)
+			local tweenPosition = tweenService:Create(frame, tweenInfo, {Position = position1})
+			tweenPosition:Play()
+			-- Mudar a cor para vermelho
+			button.BackgroundColor3 = color1
+		end
+	
+		-- Alternar o estado
+		isAtPosition1 = not isAtPosition1
+	end
+	
+	-- Conectar a função ao evento de clique do botão
+	button.MouseButton1Click:Connect(toggleFrame)
+	
+end
+local function FKGVEV_fake_script() -- Fake Script: StarterGui.ScreenGui.TextButton
+    local script = Instance.new("LocalScript")
+    script.Name = "TextButton"
+    script.Parent = Converted["_ScreenGui"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	-- Cria o TextButton
+	local textButton = Instance.new("TextButton")
+	textButton.Parent = script.Parent -- Define o ScreenGui como pai do botão
+	textButton.Position = UDim2.new(0.055, 0, 0.076, 0)
+	textButton.Size = UDim2.new(0.066, 0, 0.08, 0)
+	textButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+	textButton.FontFace = Font.new("rbxasset://fonts/fredoka-one.ttf") -- Configura a fonte como Fredoka One
+	textButton.Text = "Open"
+	textButton.TextSize = 25
+	textButton.Name = "OC"
+	
+	local UICorner = Instance.new("UICorner")
+	UICorner.CornerRadius = UDim.new(0.8) -- Define o CornerRadius
+	UICorner.Parent = script.Parent:WaitForChild("OC") -- Define o parent como o botão "OC"
+	
+	
+	local OCui = script.Parent:WaitForChild("OC") -- Certifique-se de que o botão "OC" existe como filho do script.Parent
+	
+	-- Cria o UIStroke
+	local uistroke = Instance.new("UIStroke")
+	uistroke.Parent = OCui
+	uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	uistroke.Thickness = 2
+	
+	-- Referência ao Frame chamado "Main"
+	local frame = script.Parent:WaitForChild("Main")
+	
+	-- Função para criar o efeito RGB no texto do botão
+	local function animateTextRGB()
+		while true do
+			for r = 0, 255, 5 do
+				OCui.TextColor3 = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				OCui.TextColor3 = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				OCui.TextColor3 = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	-- Função para criar o efeito RGB na borda (UIStroke)
+	local function animateStrokeRGB()
+		while true do
+			for r = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(r, 0, 255 - r)
+				wait(0.05)
+			end
+			for g = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(255 - g, g, 0)
+				wait(0.05)
+			end
+			for b = 0, 255, 5 do
+				uistroke.Color = Color3.fromRGB(0, 255 - b, b)
+				wait(0.05)
+			end
+		end
+	end
+	
+	-- Inicia ambas as animações RGB simultaneamente
+	spawn(animateTextRGB)
+	spawn(animateStrokeRGB)
+	
+	
+	-- Variável para evitar abrir/fechar ao arrastar
+	local isDragging = false 
+	
+	-- Função para alternar visibilidade do Frame
+	local function toggleFrame()
+		if not isDragging then
+			frame.Visible = not frame.Visible
+			frame.Active = frame.Visible
+			frame.ZIndex = frame.Visible and 2 or 0
+	
+			if frame.Visible then
+				textButton.Text = "Close"
+			else
+				textButton.Text = "Open"
+			end
+		end
+	end
+	
+	-- Conecta a função ao evento de clique no botão
+	textButton.MouseButton1Click:Connect(toggleFrame)
+	
+	-- Script de arrasto para o botão
+	local button = script.Parent:WaitForChild("OC")                           -- Referência ao botão
+	local UIS = game:GetService("UserInputService")          -- Serviço para entrada do usuário
+	
+	local dragThreshold = 10  -- Limite de movimento para diferenciassssssssssssssssssssr entre arrasto e clique
+	local dragging = false
+	local dragStart, startPos
+	
+	-- Variável para sinalizar se está arrastando (usado para o script de abrir/fechar)
+	local function updateDraggingState(state)
+		local openCloseScript = button:FindFirstChild("OC")  -- Nome do script de abrir/fechar
+		if openCloseScript then
+			openCloseScript.isDragging = state
+		end
+	end
+	
+	local function updateInput(input)
+		if dragging then
+			local delta = input.Position - dragStart
+			if delta.Magnitude > dragThreshold then
+				updateDraggingState(true)  -- Define como arrastando
+			end
+			button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+	end
+	
+	-- Detecta o início do arrasto (para toque e mouse)
+	local function onInputBegan(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			updateDraggingState(false)  -- Reseta o estado de clique
+			dragStart = input.Position
+			startPos = button.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+					wait(0.1)  -- Pequeno atraso para garantir que o evento MouseButton1Click não dispare logo após o arrasto
+					updateDraggingState(false)
+				end
+			end)
+		end
+	end
+	
+	-- Detecta mudanças de posição do mouse e do toque enquanto arrasta
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			updateInput(input)
+		end
+	end)
+	
+	-- Conecta os eventos de início de arrasto para mouse e toque
+	button.InputBegan:Connect(onInputBegan)
+	
+end
+local function GTJIQS_fake_script() -- Fake Script: StarterGui.ScreenGui.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_ScreenGui"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	-- Referência aos elementos na interface
+	local Main = script.Parent:WaitForChild("Main")
+	local MainBT = script.Parent.Main.Bar:WaitForChild("MainBT")
+	local MiscBT = script.Parent.Main.Bar:WaitForChild("MiscBT")
+	local PlayerBT = script.Parent.Main.Bar:WaitForChild("PlayerBT")
+	local SettingsBT = script.Parent.Main.Bar:WaitForChild("Settings")
+	
+	local MainFR = Main.MainFR 
+	local MiscFR = Main.MiscFR
+	local PlayerFR = Main.PlayerFR
+	local SettingsFR = Main.SettingsFR
+	
+	-- Função para ocultar todos os frames
+	local function hideAllFrames()
+		MainFR.Visible = false
+		MiscFR.Visible = false
+		PlayerFR.Visible = false
+		SettingsFR.Visible = false
+	end
+	
+	-- Funções para mostrar o frame correspondente ao botão
+	MainBT.MouseButton1Click:Connect(function()
+		hideAllFrames()
+		MainFR.Visible = true
+	end)
+	
+	MiscBT.MouseButton1Click:Connect(function()
+		hideAllFrames()
+		MiscFR.Visible = true
+	end)
+	
+	PlayerBT.MouseButton1Click:Connect(function()
+		hideAllFrames()
+		PlayerFR.Visible = true
+	end)
+	
+	SettingsBT.MouseButton1Click:Connect(function()
+		hideAllFrames()
+		SettingsFR.Visible = true
+	end)
+	
+	-- Inicializar escondendo todos os frames exceto o MainFrame
+	hideAllFrames()
+	MainFR.Visible = true
+	
+end
+
+coroutine.wrap(ROXD_fake_script)()
+coroutine.wrap(JCMVT_fake_script)()
+coroutine.wrap(NZBI_fake_script)()
+coroutine.wrap(SSNS_fake_script)()
+coroutine.wrap(CGTWVLY_fake_script)()
+coroutine.wrap(KFGRWI_fake_script)()
+coroutine.wrap(RJQPYIZ_fake_script)()
+coroutine.wrap(FKGVEV_fake_script)()
+coroutine.wrap(GTJIQS_fake_script)()
